@@ -1,0 +1,18 @@
+{
+  "name": "p2",
+  "version": "1.0.0",
+  "description": "User\r                   │\r                   ▼\r         HTML + CSS + JavaScript\r                   │\r              (HTTP Request)\r                   │\r                   ▼\r          Node.js + Express Server\r                   │\r         Runs your C++ executable\r                   │\r                   ▼\r          Your URL Shortener (C++)\r                   │\r                   ▼\r               data.txt",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "expres": "^0.0.5",
+    "express": "^5.2.1"
+  }
+}

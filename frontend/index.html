@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>URL Shortener</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="page-bg">
+    <div class="shorten-card">
+      <div class="card-header">
+        <h1>Shorten your URL</h1>
+        <p>Fast, simple and stylish URL shortening.</p>
+      </div>
+
+      <form id="shorten-form" novalidate>
+        <div class="input-row">
+          <input
+            id="url-input"
+            type="url"
+            placeholder="Paste a long URL here, e.g. https://example.com/page"
+            autocomplete="off"
+            required
+          >
+          <button id="shorten-btn" type="submit">
+            <span class="btn-label">Shorten</span>
+            <span class="btn-spinner" aria-hidden="true"></span>
+          </button>
+        </div>
+        <p id="form-error" class="form-error hidden"></p>
+      </form>
+
+      <div id="result" class="result hidden">
+        <span>Your short URL</span>
+        <div class="result-row">
+          <a href="#" id="short-url" target="_blank" rel="noopener"></a>
+          <button id="copy-btn" type="button" title="Copy to clipboard">Copy</button>
+        </div>
+      </div>
+
+      <div id="history-section" class="history hidden">
+        <span class="history-title">Recent links</span>
+        <ul id="history-list"></ul>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

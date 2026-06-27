@@ -1,0 +1,14 @@
+# Node dependencies
+node_modules/
+
+# Build files
+backend/*.exe
+
+# Runtime data
+backend/data.txt
+
+# Environment variables (future use)
+.env
+
+# System files
+.DS_Store
